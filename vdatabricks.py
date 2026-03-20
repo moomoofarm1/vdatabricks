@@ -5,7 +5,7 @@
 # The code in the line below turns the whole .ipynb file into a .py script.
 # jupyter nbconvert --to python dkalfprojectdk/dev_condaspeechpipe_win3.ipynb
 
-# In[2]:
+# In[3]:
 
 
 get_ipython().system('jupyter nbconvert --to python dev_vdatabricks.ipynb --output vdatabricks.py')
@@ -105,11 +105,11 @@ if __name__ == "__main__":
 # List of commands to execute
 commands = [
     # ===== conda env setup =====
-    # "conda create -n vdenotransdeidai python=3.11 -y",
+    "conda create -n vdenotransdeidai python=3.11 -y",
     # "conda create -n vdiar python=3.11 -y",
     # "conda create -n vdenospbr python=3.12 -y",
     # "conda create -n vdeidspacy python=3.11 -y",
-    "conda create -n vmodelscope python=3.9 -y",
+    # "conda create -n vmodelscope python=3.9 -y",
     # ===== vdeidspacy =====
     # The ner model needs spacy >=3.5.x < 3.6
     # Core: keep spaCy + compiled deps consistent (conda-forge)
